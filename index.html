@@ -4,55 +4,64 @@
   <meta charset="utf-8">
   <title>registration form</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="css/modules.css" rel="stylesheet">
+  <link href="css/type.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+sans:400,400i,700$display=swap">
 </head>
 <body>
 
-  <section>
-    <h1>Want to go to Mars?</h1>
-    <hr>
-    <p>We're looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
-  </section>
+  <section class="wrapper island">
+    <div class="max-length">
+      <div>
+        <h1 class="push-0">Want to go to Mars?</h1>
+        <hr>
+        <p>We're looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+      </div>
 
-  <form class="" action="www.formspree.io/parker.mazerolle@gmail.com" method="post">
-    <div class="">
-      <label for="name">Name</label>
-      <input id="name" type="text" name="Name" required>
+      <form class="push-0" action="www.formspree.io/parker.mazerolle@gmail.com" method="post">
+        <div class="push">
+          <label for="name">Name</label>
+          <input id="name" type="text" name="Name" required>
+        </div>
+        <div class="push">
+          <label for="age">Age</label>
+          <input type="number" id="age" name="Age" required>
+        </div>
+        <div class="push">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required>
+        </div>
+        <div class="push">
+          <label for="fit">Physical Fitness</label>
+          <select class="" id="fit" name="Fitness" required>
+            <option>Super-Human</option>
+            <option>Fit as a fiddle</option>
+            <option>Not terribly strong</option>
+            <option>A little couch-potato-y</option>
+            <option>WOW Player</option>
+            <option>What's Mars? Isn't that like a chocolate bar?</option>
+            <option>I've turned myself into a pickle Morty, I've really gone and done it! I'm Pickle Riiiick!</option>
+          </select>
+        </div>
+        <div class="push">
+          <label for="address">Address</label>
+          <textarea name="address" id="address"></textarea>
+        </div>
+        <fieldset>
+          <legend class="italic push-1-2 mega">Mission statement</legend>
+          <div class="push">
+            <label for="survey">Why do you want to go to Mars?</label>
+            <textarea name="message" id="survey" required></textarea>
+          </div>
+        </fieldset>
+        <div class="push">
+          <button class="btn btn-dark mega bold" type="submit">Register for the trip!</button>
+        </div>
+      </form>
     </div>
-    <div class="">
-      <label for="age">Age</label>
-      <input id="age" name="Age" required>
-    </div>
-    <div class="">
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" required>
-    </div>
-    <div class="">
-      <label for="fit">Physical Fitness</label>
-      <select class="" id="fit" name="Fitness" required>
-        <option>Super-Human</option>
-        <option>Fit as a fiddle</option>
-        <option>Not terribly strong</option>
-        <option>A little couch-potato-y</option>
-        <option>WOW Player</option>
-        <option>What's Mars? Isn't that like a chocolate bar?</option>
-        <option>I've turned myself into a pickle Morty, I've really gone and done it! I'm Pickle Riiiick!</option>
-      </select>
-    </div>
-    <div class="">
-      <label for="address">Address</label>
-      <textarea name="address" id="address"></textarea>
-    </div>
-    <span>Mission statement</span>
-    <hr>
-    <div class="">
-      <label for="survey">Why do you want to go to Mars?</label>
-      <textarea name="message" id="survey" required></textarea>
-    </div>
-    <div class="">
-      <button type="submit">Register for the trip!</button>
-    </div>
-  </form>
+  </section>
 
 </body>
 </html>
