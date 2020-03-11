@@ -17,48 +17,55 @@
       <div>
         <h1 class="push-0">Want to go to Mars?</h1>
         <hr>
-        <p>We're looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+        <p class="mega">We're looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
       </div>
 
       <form class="push-0" action="www.formspree.io/parker.mazerolle@gmail.com" method="post">
-        <div class="push">
-          <label for="name">Name</label>
-          <input id="name" type="text" name="Name" required>
-        </div>
-        <div class="push">
-          <label for="age">Age</label>
-          <input type="number" id="age" name="Age" required>
-        </div>
-        <div class="push">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" required>
-        </div>
-        <div class="push">
-          <label for="fit">Physical Fitness</label>
-          <select class="" id="fit" name="Fitness" required>
-            <option>Super-Human</option>
-            <option>Fit as a fiddle</option>
-            <option>Not terribly strong</option>
-            <option>A little couch-potato-y</option>
-            <option>WOW Player</option>
-            <option>What's Mars? Isn't that like a chocolate bar?</option>
-            <option>I've turned myself into a pickle Morty, I've really gone and done it! I'm Pickle Riiiick!</option>
-          </select>
-        </div>
-        <div class="push">
-          <label for="address">Address</label>
-          <textarea name="address" id="address"></textarea>
-        </div>
         <fieldset>
+          <legend class="italic mega push-1-2">Personal details</legend>
+          <div class="push">
+            <label for="name">Name</label>
+            <input id="name" type="text" name="Name" required>
+          </div>
+          <div class="push">
+            <label for="age">Age</label>
+            <input type="number" id="age" name="Age" required>
+          </div>
+          <div class="push">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+          </div>
+          <div class="push">
+            <label for="fit">Physical Fitness</label>
+            <select class="" id="fit" name="Fitness" required>
+              <option>Super-Human</option>
+              <option>Fit as a fiddle</option>
+              <option>Not terribly strong</option>
+              <option>A little couch-potato-y</option>
+              <option>WOW Player</option>
+              <option>What's Mars? Isn't that like a chocolate bar?</option>
+              <option>I've turned myself into a pickle Morty, I've really gone and done it! I'm Pickle Riiiick!</option>
+            </select>
+          </div>
+          <div class="push">
+            <label for="address">Address</label>
+            <textarea name="address" id="address"></textarea>
+          </div>
+        </fieldset>
+
+        <fieldset class="push-1-4">
           <legend class="italic push-1-2 mega">Mission statement</legend>
           <div class="push">
             <label for="survey">Why do you want to go to Mars?</label>
             <textarea name="message" id="survey" required></textarea>
           </div>
         </fieldset>
-        <div class="push">
+
+        <div class="text-center push">
           <button class="btn btn-dark mega bold" type="submit">Register for the trip!</button>
         </div>
+
+        <input type="hidden" name="_subject" value="Request to join the mission">
       </form>
     </div>
   </section>
