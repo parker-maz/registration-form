@@ -1,11 +1,15 @@
 html {
-  font-family: 'Open sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   background-color: #fff;
   color: #000;
 }
 
 .content {
   padding-top: 1rem;
+}
+
+h1 {
+  border-bottom: 1px solid #000;
 }
 
 .btn:hover {
